@@ -9,6 +9,10 @@
     
     'author': 'douglas camargo',
     
+    'data':[
+        'views/academy_menuitems.xml',
+    ],
+    
     'demo': [
         
     ],
