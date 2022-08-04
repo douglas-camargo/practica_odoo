@@ -1,14 +1,20 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models
+from odoo import models, fields, api
 
-class TestModel(models.Model):
+class Course(models.Model):
     _name = "academy.course"
     _description = "Course Info"
 
-# from odoo import models, fields, api
+    name = fields.Char(string="Title", required=True)
+    description = fields.Text(string="Description")
 
-# class Course(models.Model):
-#   _name = 'academy.course'
-#   _description = 'Course Info'
+    level = fields.Selection(string="Level",
+                            selection=[("beginner", "Beginner"),
+                            ("intermediate", "Intermediate"),
+                            ("advanced", "Advance")],
+    copy=False)
+
+    active = fields.Boolean(string="Active", default=True)
+
   
