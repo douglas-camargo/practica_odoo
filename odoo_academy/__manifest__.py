@@ -20,7 +20,7 @@
     "data":[
       'security/academy_security.xml',
       'security/ir.model.access.csv',
-      'vews/academy_menuitems.xml',
+      'views/academy_menuitems.xml',
     ],
     
 }
